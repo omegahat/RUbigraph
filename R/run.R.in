@@ -1,0 +1,15 @@
+UbigraphServerApp = @RUBIGRAPH@
+
+runUbigraph =
+function(cmd = UbigraphServerApp, error = TRUE)
+{
+  if(is.na(cmd) || length(cmd) == 0) {
+     if(error)
+        stop("need name of Ubigraph executable")
+     else
+        return(FALSE)
+  }
+  
+  system(paste(cmd, "&"))
+  TRUE
+}

@@ -1,0 +1,11 @@
+AC_INIT(R/run.R.in)
+
+AC_PATH_PROG(RUBIGRAPH, "ubigraph_server")
+
+if test -z "${RUBIGRAPH}" ; then
+  RUBIGRAPH="NA"
+fi
+
+AC_SUBST(RUBIGRAPH)
+
+AC_OUTPUT(R/run.R)

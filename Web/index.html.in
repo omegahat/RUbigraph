@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<link rel="stylesheet" href="http://www.omegahat.org/OmegaTech.css"/>
+<title>@PKG_NAME@</title>
+</head>
+
+<body>
+<h1>@PKG_NAME@</h1>
+<p align="right"><a href="@TAR_FILE@">@TAR_FILE@</a></p>
+
+This package provides an R interface to a <a href="http://ubietylab.net/ubigraph/index.html">Ubigraph</a> server for drawing
+interactive, dynamic graphs.  We can add and remove vertices/nodes and
+edges in a graph and change their attributes/charactersitics such as
+shape, color, size.
+
+<p/>
+Ubigraph is not open source software, but is available for free in
+binary form. It is a shame it is not open source as we might be able
+to build on it to extend its features.
+
+<p/>
+This started as an example of using XML-RPC for inter-process communication.
+
+<h2>Software</h2>
+The source is available from <a href="@TAR_FILE@">@TAR_FILE@</a>
+<p>
+This depends on <a href="../XMLRPC">XMLRPC</a>,
+<a href="../RSXML">XML</a>, <a href="../RCurl">RCurl</a>.
+
+<h2>Examples</h2>
+<dl>
+  <dt>
+  <li> Display a graph of Omegahat packages and their dependencies
+  <dd> <a href="tests/packages.R">packages.R</a>
+
+  <dt>
+  <li> Using a Ubigraph server object in R
+  <dd> <a href="tests/server.R">server.R</a>
+
+  <dt>
+  <li> Drawing 10 torii in a circle
+  <dd> <a href="tests/circle.R">circle.R</a>
+
+  <dt>
+  <li> Setting attributes
+  <dd> <a href="tests/attrs.R">attrs.R</a>
+
+  <dt>
+  <li> Illustrating different syntaxes for setting attributes
+  <dd> <a href="tests/setAttrs.R">setAttrs.R</a>            
+
+  <dt>
+  <li> Removing nodes and edges
+  <dd> <a href="tests/remove.R">remove.R</a>                  
+</dl>
+
+
+<h2>Screenshot</h2>
+
+<img src="OmegahatPackages2.png"/>
+A display of the Omegahat packages and their dependencies.
+The code to create this is in <a href="tests/packages.R">packages.R</a>
+When running a RUbigraph session, one can interact with the plot.
+Packages colored red are Omegahat packages. The others are from
+base or CRAN
+
+<p/>
+<img src="OmegaPackagesZoom.png">
+Here we zoom in on the large cluster of related packages
+and see that these relate mostly to XML.
+These are the core of the book Deb Nolan and I are writing.
+
+
+
+
+
+<hr>
+<address><a href="http://www.stat.ucdavis.edu/~duncan">Duncan Temple Lang</a>
+<a href=mailto:duncan@wald.ucdavis.edu>&lt;duncan@wald.ucdavis.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Fri Feb 26 12:14:50 PST 2010
+<!-- hhmts end -->
+</body> </html>

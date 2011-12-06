@@ -1,0 +1,57 @@
+import(XMLRPC)
+import(RCurl)
+
+exportClasses("VertexID", "EdgeID", "UbigraphID", "Ubigraph")
+
+export(runUbigraph)
+export(isUbigraphRunning)
+export(Ubigraph)
+
+exportMethods("$", "$<-", "[[<-")
+
+export(clear, newVertex, newEdge, setAttributes,
+       removeEdge, removeVertex)
+
+
+
+
+export( "color<-",
+"shape<-",
+"shapedetail<-",
+"label<-",
+"size<-",
+"fontcolor<-",
+"fontfamily<-",
+"fontsize<-",
+"visible<-",
+"arrow<-",
+"arrow_position<-",
+"arrow_radius<-",
+"arrow_length<-",
+"arrow_reverse<-",
+"width<-",
+"stroke<-",
+"showstrain<-",
+"oriented<-",
+"strength<-",
+"spline<-" )
+exportMethods( "color<-",
+"shape<-",
+"shapedetail<-",
+"label<-",
+"size<-",
+"fontcolor<-",
+"fontfamily<-",
+"fontsize<-",
+"visible<-",
+"arrow<-",
+"arrow_position<-",
+"arrow_radius<-",
+"arrow_length<-",
+"arrow_reverse<-",
+"width<-",
+"stroke<-",
+"showstrain<-",
+"oriented<-",
+"strength<-",
+"spline<-" )

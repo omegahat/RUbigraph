@@ -1,0 +1,17 @@
+Package: RUbigraph
+Version: 0.1-1
+Title: Interface to Ubigraph server via XML-RPC
+Author: Duncan Temple Lang
+SystemRequirements: Ubigraph (http://ubietylab.net/ubigraph/index.html)
+Maintainer: Duncan Temple Lang <duncan@wald.ucdavis.edu>
+Description: This package provides an interface to Ubigraph.
+  Unibraph is a program that draws dynamic graphs (nodes and edges).
+  We communicate with Ubigraph via XML-RPC and there is a small collection
+  of methods to create and modify nodes/vertices and edges.
+License: BSD
+LazyLoad: true
+Depends: R (>= 2.7.0), methods, RCurl, XMLRPC
+URL: http://www.omegahat.org/RUbigraph
+
+
+
